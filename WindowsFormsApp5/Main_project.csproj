@@ -1,0 +1,566 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{A7161EBC-A820-45D5-8E3A-915502329C5F}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>WindowsFormsApp5</RootNamespace>
+    <AssemblyName>WindowsFormsApp5</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <LangVersion>7.3</LangVersion>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <LangVersion>7.3</LangVersion>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Guna.UI2, Version=2.0.2.5, Culture=neutral, PublicKeyToken=e4b9cdd7b4cde4b4, processorArchitecture=MSIL">
+      <HintPath>..\packages\Guna.UI2.WinForms.2.0.2.5\lib\net40\Guna.UI2.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="adimloginpage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="adimloginpage.Designer.cs">
+      <DependentUpon>adimloginpage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminLog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminLog.Designer.cs">
+      <DependentUpon>AdminLog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Anna%27s Dream House.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Anna%27s Dream House.designer.cs">
+      <DependentUpon>Anna%27s Dream House.cs</DependentUpon>
+    </Compile>
+    <Compile Include="classic_book.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="classic_book.Designer.cs">
+      <DependentUpon>classic_book.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Classic_booknext.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Classic_booknext.Designer.cs">
+      <DependentUpon>Classic_booknext.cs</DependentUpon>
+    </Compile>
+    <Compile Include="displayregisterddetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="displayregisterddetails.Designer.cs">
+      <DependentUpon>displayregisterddetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Glimpses_of_the_Moon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Glimpses_of_the_Moon.designer.cs">
+      <DependentUpon>Glimpses_of_the_Moon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Kids_book.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Kids_book.Designer.cs">
+      <DependentUpon>Kids_book.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Little_star.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Little_star.designer.cs">
+      <DependentUpon>Little_star.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OrderBook.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OrderBook.Designer.cs">
+      <DependentUpon>OrderBook.cs</DependentUpon>
+    </Compile>
+    <Compile Include="mainpage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="mainpage.Designer.cs">
+      <DependentUpon>mainpage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Out of Control.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Out of Control.designer.cs">
+      <DependentUpon>Out of Control.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Payment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Payment.Designer.cs">
+      <DependentUpon>Payment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pet Sematary.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pet Sematary.designer.cs">
+      <DependentUpon>Pet Sematary.cs</DependentUpon>
+    </Compile>
+    <Compile Include="register.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="register.Designer.cs">
+      <DependentUpon>register.cs</DependentUpon>
+    </Compile>
+    <Compile Include="regupdate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="regupdate.Designer.cs">
+      <DependentUpon>regupdate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="resetpassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="resetpassword.Designer.cs">
+      <DependentUpon>resetpassword.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Romance_Book.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Romance_Book.Designer.cs">
+      <DependentUpon>Romance_Book.cs</DependentUpon>
+    </Compile>
+    <Compile Include="sign.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="sign.Designer.cs">
+      <DependentUpon>sign.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="story_snail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="story_snail.designer.cs">
+      <DependentUpon>story_snail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="The Essays of Elia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="The Essays of Elia.designer.cs">
+      <DependentUpon>The Essays of Elia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="The Marriage Possession.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="The Marriage Possession.designer.cs">
+      <DependentUpon>The Marriage Possession.cs</DependentUpon>
+    </Compile>
+    <Compile Include="The only one.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="The only one.designer.cs">
+      <DependentUpon>The only one.cs</DependentUpon>
+    </Compile>
+    <Compile Include="The Tale of Peter Rabbit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="The Tale of Peter Rabbit.designer.cs">
+      <DependentUpon>The Tale of Peter Rabbit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Themecolor.cs" />
+    <Compile Include="Thrillers_book.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Thrillers_book.Designer.cs">
+      <DependentUpon>Thrillers_book.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tom Clancy Shadow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tom Clancy Shadow.designer.cs">
+      <DependentUpon>Tom Clancy Shadow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Uncle_Toms_Cabin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Uncle_Toms_Cabin.designer.cs">
+      <DependentUpon>Uncle_Toms_Cabin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Witches.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Witches.designer.cs">
+      <DependentUpon>Witches.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="adimloginpage.resx">
+      <DependentUpon>adimloginpage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminLog.resx">
+      <DependentUpon>AdminLog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Anna%27s Dream House.resx">
+      <DependentUpon>Anna%27s Dream House.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="classic_book.resx">
+      <DependentUpon>classic_book.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Classic_booknext.resx">
+      <DependentUpon>Classic_booknext.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="displayregisterddetails.resx">
+      <DependentUpon>displayregisterddetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Glimpses_of_the_Moon.resx">
+      <DependentUpon>Glimpses_of_the_Moon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Kids_book.resx">
+      <DependentUpon>Kids_book.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Little_star.resx">
+      <DependentUpon>Little_star.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OrderBook.resx">
+      <DependentUpon>OrderBook.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="mainpage.resx">
+      <DependentUpon>mainpage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Out of Control.resx">
+      <DependentUpon>Out of Control.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Payment.resx">
+      <DependentUpon>Payment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pet Sematary.resx">
+      <DependentUpon>Pet Sematary.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="register.resx">
+      <DependentUpon>register.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="regupdate.resx">
+      <DependentUpon>regupdate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resetpassword.resx">
+      <DependentUpon>resetpassword.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Romance_Book.resx">
+      <DependentUpon>Romance_Book.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="sign.resx">
+      <DependentUpon>sign.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="story_snail.resx">
+      <DependentUpon>story_snail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="The Essays of Elia.resx">
+      <DependentUpon>The Essays of Elia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="The Marriage Possession.resx">
+      <DependentUpon>The Marriage Possession.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="The only one.resx">
+      <DependentUpon>The only one.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="The Tale of Peter Rabbit.resx">
+      <DependentUpon>The Tale of Peter Rabbit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Thrillers_book.resx">
+      <DependentUpon>Thrillers_book.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tom Clancy Shadow.resx">
+      <DependentUpon>Tom Clancy Shadow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Uncle_Toms_Cabin.resx">
+      <DependentUpon>Uncle_Toms_Cabin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Witches.resx">
+      <DependentUpon>Witches.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\online-library-website-page-for-landing-books-vector-26211965.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\website-template-preview-55654.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\digital-2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lf.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images %281%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images %283%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images %282%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images %284%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images %285%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download %281%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download %282%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download %281%291.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images %283%291.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images %281%291.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\online-library-media-books-archive-concept-tiny-people-characters-huge-computer-screen-bookshelves-reading-e-study-179077729.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images %284%291.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images %283%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download %283%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download %283%291.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download %282%291.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images %284%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\twitter_circled_50px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\facebook_circled_50px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fast_cart_64px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images %282%292.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\istockphoto-1059510610-612x612.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\y.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\344230.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3442301.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ss.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download %283%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download %284%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download %285%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download %286%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download %288%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download %287%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download %289%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download %2810%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download %2811%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download %2813%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download %2812%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\out of control.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download %2812%291.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download %2813%291.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\glimpses.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\star_filled_48px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\star_half_48px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download %285%291.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\shopping_cart_24px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\story snail.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ss1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\shopping_cart_24px1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\shopping_cart_24px2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\shopping_cart_24px3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download %2810%291.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download %289%291.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rabbit.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download %2813%292.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\little star.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Withes.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download %283%291.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download %283%292.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
